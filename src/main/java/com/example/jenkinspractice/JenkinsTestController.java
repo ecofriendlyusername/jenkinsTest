@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class JenkinsTestController {
     @GetMapping("/helloworld")
     public ResponseEntity<?> helloWorld() {
+        System.out.println("hello world ! ");
         return new ResponseEntity<String>("Hello World", HttpStatus.OK);
     }
 }
