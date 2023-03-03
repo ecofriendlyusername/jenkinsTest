@@ -9,7 +9,8 @@ COPY src src
 RUN microdnf install findutils
 
 RUN chmod +x ./gradlew
-RUN ./gradlew bootJAR
+# RUN ./gradlew bootJAR
+RUN dos2unix NAME-OF-FILE.sh
 
 FROM openjdk:19
 COPY --from=builder build/libs/*.jar app.jar
