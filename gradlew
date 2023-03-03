@@ -1,5 +1,5 @@
 #!/bin/sh
-dos2unix my_script
+
 #
 # Copyright © 2015-2021 the original authors.
 #
