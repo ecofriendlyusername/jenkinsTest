@@ -1,4 +1,4 @@
-pipeline 
+pipeline {
     agent { 
         dockerfile {
             dir "C:/Users/SSAFY/Desktop/JenkinsPractice/JenkinsPractice/back"
