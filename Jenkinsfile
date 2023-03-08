@@ -1,7 +1,7 @@
 pipeline {
     agent { 
         dockerfile {
-            dir "C:/Users/SSAFY/Desktop/JenkinsPractice/JenkinsPractice/back"
+            dir " C:/Users/SSAFY/AppData/Local/Jenkins/.jenkins/workspace/sda/back"
         } 
     }
     stages {
