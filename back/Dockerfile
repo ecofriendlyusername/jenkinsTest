@@ -1,5 +1,6 @@
 FROM openjdk:19 AS builder
 
+RUN microdnf install findutils
 COPY gradlew .
 COPY gradle gradle
 COPY build.gradle .
