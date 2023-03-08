@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 @Entity
 public class TestEntity  {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     String name;
 
