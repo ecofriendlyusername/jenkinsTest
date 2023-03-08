@@ -32,6 +32,6 @@ public class JenkinsTestController {
     public ResponseEntity<?> getMyName(@PathVariable String myname) {
         TestEntity testEntity = (TestEntity) testRepo.findByName(myname);
         String a = testEntity.getId().toString() + testEntity.getName();
-        return new ResponseEntity<String>("a",HttpStatus.OK);
+        return new ResponseEntity<String>(a,HttpStatus.OK);
     }
 }
