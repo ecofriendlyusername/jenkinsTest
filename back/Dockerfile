@@ -12,5 +12,5 @@ RUN ./gradlew bootJAR
 
 FROM openjdk:19
 COPY --from=builder build/libs/*.jar app.jar
-EXPOSE 5000
+EXPOSE 5050
 ENTRYPOINT ["java", "-jar", "/app.jar"]
