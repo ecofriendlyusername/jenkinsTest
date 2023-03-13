@@ -1,16 +1,15 @@
 pipeline {
-agent none
+    agent none
     stages {
         stage('run') {
             agent { 
-        dockerfile {
-            dir "./back"
-        } 
-    }
+               dockerfile { 
+                    dir "./back" 
+               } 
+            }
             steps {
                 echo 'testing... hello'
-                sh 'docker build -t
             }
         }
-            }
+    }
 }
