@@ -1,8 +1,8 @@
 pipeline {
     agent any
     stages {
-        agent { dockerfile { dir "./back"} }
         stage('Build') {
+            agent { dockerfile { dir "./back"} }
             steps {
                 echo 'hello'
             }
