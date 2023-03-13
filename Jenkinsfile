@@ -1,5 +1,11 @@
-node {
-                sh 'pwd'
-                def testImage = docker.build("test-image","./back")
-                docker.image("test-image").withRun('-p 5050:5050')
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'docker build -t extag ./back'
+                sh 'docker run -p 5050:5050 extag'
+            }
+        }
+    }
 }
