@@ -9,7 +9,7 @@ pipeline {
             }
             steps {
                 echo 'testing... hello'
-                pwd
+                sh 'pwd'
             }
         }
     }
