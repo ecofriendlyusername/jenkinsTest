@@ -9,9 +9,8 @@ pipeline {
             }
             steps {
                 echo 'testing... hello'
-                sh 'docker build -t somename'
-                sh 'docker run somename -p 5050'  
+                pwd
             }
         }
-    }g
+    }
 }
