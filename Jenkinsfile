@@ -8,11 +8,8 @@ pipeline {
             }
         }
         stage('Run') {
-            agent any
-            steps {
-                docker.build("tat","./back")
-                docker.image("tat").withRun("-p 5050:5050")
-            }
+            docker.build("tat","./back")
+            docker.image("tat").withRun("-p 5050:5050")
         }
     }
 }
