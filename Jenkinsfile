@@ -1,7 +1,7 @@
 pipeline {
     agent { 
         dockerfile {
-            dir "./sda/back"
+            dir "./back"
         } 
     }
     stages {
