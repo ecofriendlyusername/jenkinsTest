@@ -25,7 +25,7 @@ public class JenkinsTestController {
         TestEntity testEntity = new TestEntity();
         testEntity.setName(myname);
         testRepo.save(testEntity);
-        return new ResponseEntity<String>("Done",HttpStatus.OK);
+        return new ResponseEntity<String>("Dooooone",HttpStatus.OK);
     }
 
     @GetMapping("/helloworld/getmyname/{myname}")
