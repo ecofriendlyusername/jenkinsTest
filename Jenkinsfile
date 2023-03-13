@@ -1,15 +1,16 @@
 pipeline {
     agent any
     stages {
-        stage('End') {
-            agent any
+        stage('Build') {
+            agent { 
+                 dockerfile { 
+                      dir "./back"
+                      args "-p 5050:5050" 
+                 }
+            }     
             steps {
-               sh "hello"
-            }
-        }
-        stage('Run') {
-            docker.build("tat","./back")
-            docker.image("tat").withRun("-p 5050:5050")
+                echo "hey there"
+            }  
         }
     }
 }
