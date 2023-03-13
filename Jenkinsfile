@@ -1,10 +1,10 @@
 pipeline {
-    agent {
-          dockerfile { dir "./back" }
-    }
+agent any
     stages {
         stage('run') {
-            agent any
+            agent {
+          dockerfile { dir "./back" }
+    }
             steps {
                 echo 'testing... hello'
                 sh 'pwd'
