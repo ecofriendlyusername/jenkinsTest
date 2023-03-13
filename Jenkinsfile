@@ -5,7 +5,7 @@ pipeline {
             agent { 
                  dockerfile { 
                       dir "./back"
-                      args "-p 5050:5050" 
+                      args "-p 5050:5050 -t hellot" 
                  }
             }     
             steps {
